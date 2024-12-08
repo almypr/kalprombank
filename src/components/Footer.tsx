@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -18,26 +19,26 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
-                <span>г. Москва, ул. Банковская, 1</span>
+                <span>улица Пи 48, г. Алматы</span>
               </div>
             </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">О банке</h3>
             <ul className="space-y-2">
-              <li>Информация</li>
-              <li>Новости</li>
-              <li>Карьера</li>
-              <li>Реквизиты</li>
+              <li><Link to="/information" className="hover:underline">Информация</Link></li>
+              <li><Link to="/news" className="hover:underline">Новости</Link></li>
+              <li><Link to="/career" className="hover:underline">Карьера</Link></li>
+              <li><Link to="/requisites" className="hover:underline">Реквизиты</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Документы</h3>
             <ul className="space-y-2">
-              <li>Условия обслуживания</li>
-              <li>Тарифы</li>
-              <li>Раскрытие информации</li>
-              <li>Безопасность</li>
+              <li><Link to="/terms" className="hover:underline">Условия обслуживания</Link></li>
+              <li><Link to="/tariffs" className="hover:underline">Тарифы</Link></li>
+              <li><Link to="/disclosure" className="hover:underline">Раскрытие информации</Link></li>
+              <li><Link to="/security" className="hover:underline">Безопасность</Link></li>
             </ul>
           </div>
         </div>

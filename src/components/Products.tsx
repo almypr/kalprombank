@@ -1,26 +1,31 @@
-import { CreditCard, Landmark, PiggyBank, Building } from "lucide-react";
+import { CreditCard } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const products = [
   {
-    title: "Дебетовые карты",
-    description: "Бесплатное обслуживание и кэшбэк до 5%",
+    title: "К",
+    description: "Классическая карта для повседневных покупок",
     icon: CreditCard,
+    link: "/cards/k",
   },
   {
-    title: "Кредиты",
-    description: "Низкие ставки от 5.9% годовых",
-    icon: Landmark,
+    title: "П",
+    description: "Премиальная карта с особыми привилегиями",
+    icon: CreditCard,
+    link: "/cards/p",
   },
   {
-    title: "Вклады",
-    description: "Высокий доход до 12% годовых",
-    icon: PiggyBank,
+    title: "Д",
+    description: "Дебетовая карта с высоким кэшбэком",
+    icon: CreditCard,
+    link: "/cards/d",
   },
   {
-    title: "Для бизнеса",
-    description: "Расчетный счет и эквайринг",
-    icon: Building,
+    title: "Б",
+    description: "Бизнес-карта для предпринимателей",
+    icon: CreditCard,
+    link: "/cards/b",
   },
 ];
 
@@ -29,19 +34,21 @@ export const Products = () => {
     <section className="py-20 px-4 bg-bank-light">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-bank-primary">
-          Наши продукты
+          Наши карты
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <Card key={product.title} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <product.icon className="h-12 w-12 text-bank-accent mb-4" />
-                <CardTitle>{product.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">{product.description}</p>
-              </CardContent>
-            </Card>
+            <Link to={product.link} key={product.title}>
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <product.icon className="h-12 w-12 text-bank-accent mb-4" />
+                  <CardTitle>{product.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{product.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

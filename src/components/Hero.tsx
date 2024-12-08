@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -14,10 +15,12 @@ export const Hero = () => {
               Современные банковские решения для частных лиц и бизнеса
             </p>
             <div className="flex gap-4">
-              <Button size="lg" className="bg-bank-accent hover:bg-bank-accent/90">
-                Открыть счет
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/open-account">
+                <Button size="lg" className="bg-bank-accent hover:bg-bank-accent/90">
+                  Открыть счет
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
