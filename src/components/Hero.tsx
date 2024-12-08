@@ -22,8 +22,8 @@ export const Hero = () => {
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="/placeholder.svg"
-              alt="Banking illustration"
+              src="/lovable-uploads/3cb5564d-5b87-4d30-bede-919d691c37d1.png"
+              alt="Красная премиальная карта Калпромбанка"
               className="max-w-md w-full animate-fadeIn"
             />
           </div>
