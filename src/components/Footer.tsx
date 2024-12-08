@@ -68,7 +68,6 @@ export const Footer = () => {
                 style={{
                   border: 0,
                   overflow: "hidden",
-                  scrolling: "no",
                   width: "100%",
                   height: "500px"
                 }}
