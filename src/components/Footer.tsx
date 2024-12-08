@@ -42,8 +42,12 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-white/20 text-center">
+        <div className="mt-8 pt-8 border-t border-white/20 text-center space-y-4">
           <p>© 2024 Калпромбанк. Все права защищены.</p>
+          <p className="text-sm text-gray-400">
+            Внимание: Данный сайт является сатирическим проектом и не представляет реальный банк. 
+            Вся информация на сайте предназначена исключительно для развлекательных целей.
+          </p>
         </div>
       </div>
     </footer>
