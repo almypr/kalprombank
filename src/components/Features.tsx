@@ -3,7 +3,7 @@ import { Shield, Clock, Award } from "lucide-react";
 const features = [
   {
     title: "Надежность",
-    description: "Входим в топ-100 надежных банков России",
+    description: "Входим в топ-100 надежных банков Арстотцки",
     icon: Shield,
   },
   {
