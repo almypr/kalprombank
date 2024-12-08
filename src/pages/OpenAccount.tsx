@@ -8,9 +8,9 @@ import { toast } from "sonner";
 const OpenAccount = () => {
   const [formData, setFormData] = useState({
     fullName: "",
-    phone: "",
+    telegram: "",
     email: "",
-    passport: "",
+    username: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -39,15 +39,14 @@ const OpenAccount = () => {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                Телефон
+              <label htmlFor="telegram" className="block text-sm font-medium mb-2">
+                Телеграм
               </label>
               <Input
-                id="phone"
-                type="tel"
-                value={formData.phone}
+                id="telegram"
+                value={formData.telegram}
                 onChange={(e) =>
-                  setFormData({ ...formData, phone: e.target.value })
+                  setFormData({ ...formData, telegram: e.target.value })
                 }
                 required
               />
@@ -67,14 +66,14 @@ const OpenAccount = () => {
               />
             </div>
             <div>
-              <label htmlFor="passport" className="block text-sm font-medium mb-2">
-                Серия и номер паспорта
+              <label htmlFor="username" className="block text-sm font-medium mb-2">
+                Имя пользователя для Калпромбанка
               </label>
               <Input
-                id="passport"
-                value={formData.passport}
+                id="username"
+                value={formData.username}
                 onChange={(e) =>
-                  setFormData({ ...formData, passport: e.target.value })
+                  setFormData({ ...formData, username: e.target.value })
                 }
                 required
               />
