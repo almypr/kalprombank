@@ -6,10 +6,17 @@ export const Header = () => {
     <header className="border-b">
       <div className="container mx-auto px-4 py-4">
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList className="flex items-center gap-6">
             <NavigationMenuItem>
-              <Link to="/" className="text-lg font-semibold text-bank-primary hover:text-bank-primary/80">
-                Калпромбанк
+              <Link to="/" className="flex items-center gap-2">
+                <img 
+                  src="/lovable-uploads/d72ac264-5c92-4850-854b-5504c5097a46.png" 
+                  alt="Логотип Калпромбанка" 
+                  className="h-8 w-auto"
+                />
+                <span className="text-lg font-semibold text-bank-primary hover:text-bank-primary/80">
+                  Калпромбанк
+                </span>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>

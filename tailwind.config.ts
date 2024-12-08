@@ -20,9 +20,9 @@ export default {
     extend: {
       colors: {
         bank: {
-          primary: "#1A237E",
-          accent: "#42A5F5",
-          light: "#F5F5F5",
+          primary: "#FF9C38",
+          accent: "#FFB366",
+          light: "#FFF5E6",
           text: "#333333",
         },
         border: "hsl(var(--border))",
